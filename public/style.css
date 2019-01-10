@@ -107,9 +107,22 @@ ul {
   font-size: 6vmin;
 }
 
-#favItem {
+#favItems {
   font-size:2.5vmin;
   color: black;
+}
+
+#searchRes .grid .title, 
+#searchRes .grid li,
+#favItems .grid .title,
+#favItems .grid li
+{
+  margin: 10px;
+}
+
+li{
+    list-style-type: disc;
+
 }
 
 .title{
