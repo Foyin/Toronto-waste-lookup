@@ -15,9 +15,12 @@ $(function() {
 
   $mainPage.show();
   $searchField.focus();
+  $favList.hide();
+
 
   function main(){ 
 	  $("#searchRes > div").remove();
+	  $favList.fadeIn('slow');
 	  $.when(
 	    $.getJSON("https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000", function(json) {
 		data = json.filter( obj => obj.keywords.toString().includes($searchField.val()) );
@@ -42,6 +45,7 @@ $(function() {
 					else if($(this).parent().parent().parent().attr('id') === 'favItems'){
 						$(this).parent().parent().remove();
 					}
+					
 				});
 
 		    }
@@ -91,24 +95,24 @@ $(function() {
 (function($) {
   
   $.fn.removeDuplicates = function() {
-    var $original = $([]);
-    
-    this.each(function(i, el) {
-      var $el = $(el),
-          isDuplicate;
-      
-      $original.each(function(i, orig) {
-        if (el.isEqualNode(orig)) {
-          isDuplicate = true;
-          $el.remove();
-        }
-      });
-      
-      if (!isDuplicate) {
-        $original = $original.add($el);
-      }
-    });
-    
-    return $original;
+	var $original = $([]);
+
+	this.each(function(i, el) {
+		var $el = $(el),
+			isDuplicate;
+
+		$original.each(function(i, orig) {
+			if (el.isEqualNode(orig)) {
+				isDuplicate = true;
+				$el.remove();
+			}
+		});
+
+		if (!isDuplicate) {
+			$original = $original.add($el);
+		}
+	});
+
+	return $original;
   };
 }(jQuery));
