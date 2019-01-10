@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #F0FAF2; 
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: green; 
+}
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: table;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+.main{
+  background-image: url(images/overlay.png);
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-bottom: 0.3%;
+}
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.header{
+  background-image: linear-gradient(to right, blue, green);
+  vertical-align: middle;
+  height: 15vh;
+  width: 100vw;
+  font-size: 8vh;
+  text-align: center;
+  line-height: 15vh; /* same as height! */
+
+  color: white;
+}
+
+#searchRes {
+  background-image: url(images/overlay.png);
+  position: relative;
+  width: 100%;
+  color: black;
+  font-size:2.5vmin;
+  padding: 1%;
+}
+
+#favList{
+  padding: 1%;
+  background-image: url(images/overlay.png);
+  width: 100%;
+  color: green;
+  background-color: #F0FAF2;
+  font-size: 6vmin;
+}
+
+#favItem {
+  font-size:2.5vmin;
+  color: black;
+}
+
+.addFav{
+  margin: 1%;
+  color: grey;
+}
+
+
+input{
+  width: 90%;
+  height: 10%;
+  font-size:2vw;
+  border-radius: 4px;
+  border: 1px solid #4A235A;
+  padding: 5px;
+  color: grey;
+  margin-left: 1%;
+  margin-right: 0.5%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+button {
+  background: green;
+  border: 1px solid rgb(174, 174, 174);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 2vw;
+  height: 10%;
+  width: 6%;
+  padding: 5px;
+  transition: 0.25s;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-left: 0.4%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+ 
+}
+
+button:hover{
+  background: white;
+  color: green;
+}
+
+button:active{
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 0px 0px 3px 3px rgb(0, 255, 0, 0.8);
+
+
+}
+
+
