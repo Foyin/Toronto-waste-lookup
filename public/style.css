@@ -112,6 +112,14 @@ ul {
   color: black;
 }
 
+.title{
+  width: 45vw;
+}
+
+.desc{
+  width: 45vw;
+}
+
 .addFav{
   margin: 1%;
   color: grey;
