@@ -1,4 +1,4 @@
-# Toronto-waste-lookup
+# Toronto waste lookup
 App to look up toronto waste information based on certain keywords.
 
 The app works by getting JSON files from Toronto Solid Waste Management Services through their [open-source json data](https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#5ed40494-a290-7807-d5da-09ab6a56fca2) to develop a responsive UI to access some information.
