@@ -24,13 +24,7 @@ $(function() {
 	}
   });
 
-  //Remove duplicates from favourites
-  setInterval(function(){
-
-  },1000);
-
-  //Search button functions, click anytime to refresh search
-  $searchButton.click(function(){ 
+  function main(){ 
 	  $("#searchRes > div").remove();
 	  var numEntries = 10;
 	  $.when(
@@ -67,6 +61,14 @@ $(function() {
 	    }
 	    
 	   });
+  }
+
+  //Search button functions, click anytime to refresh search
+  $searchButton.click(main);
+  $searchField.keypress(function (key) {
+	if (key.which == 13) {
+		main();  
+  	}
   });
 });
 

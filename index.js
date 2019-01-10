@@ -15,7 +15,7 @@ server.listen(port, () => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Add favicon
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
+app.use(favicon(path.join(__dirname, 'public', 'images/toronto.png')));
 
 /* catch 404 and forward to error handler
 app.use(function(req, res, next) {
