@@ -10,7 +10,7 @@ A demo of the app can be found here [here](https://torontowastelookup.herokuapp.
 To run use command `node index.js`
 
 ### What you need
-- [nodejs(version 5 - 9)](https://nodejs.org/en/)
+- [nodejs(version 5 - 10)](https://nodejs.org/en/)
 - [jQuery](https://jquery.com/)
 - [npm](https://www.npmjs.com/)
 
