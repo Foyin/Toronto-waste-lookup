@@ -1,5 +1,6 @@
 # Toronto waste lookup
 App to look up toronto waste information based on certain keywords.
+Uses jquery to look up proper way of disposing types of waste that the user inputs
 
 ### Usage
 Type in a type of waste product and find out how to properly dispose of it (according to toronto's waste management information).
